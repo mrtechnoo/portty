@@ -14,6 +14,21 @@ maintained privately; the downloads here are the ready-to-run builds.
 
 ## Install
 
+### Quick install (any platform)
+
+**macOS / Linux**
+```sh
+curl -fsSL https://raw.githubusercontent.com/mrtechnoo/portty/main/install.sh | sh
+```
+
+**Windows (PowerShell)**
+```powershell
+irm https://raw.githubusercontent.com/mrtechnoo/portty/main/install.ps1 | iex
+```
+
+The script picks the right build for your OS/arch, verifies its checksum, and
+installs `portty` + `portty-host`. Prefer a package manager? See below.
+
 ### Windows
 
 **Scoop**
