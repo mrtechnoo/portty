@@ -37,7 +37,7 @@ scoop bucket add portty https://github.com/mrtechnoo/portty
 scoop install portty
 ```
 
-**WinGet**
+**WinGet** _(coming soon — submission to the public catalog is in progress)_
 ```powershell
 winget install CorvuxMindware.Portty
 ```
@@ -51,7 +51,12 @@ brew install mrtechnoo/tap/portty
 
 ### Linux
 
-**Homebrew on Linux**
+**Quick install** (recommended)
+```sh
+curl -fsSL https://raw.githubusercontent.com/mrtechnoo/portty/main/install.sh | sh
+```
+
+**Homebrew on Linux** _(coming soon)_
 ```sh
 brew install mrtechnoo/tap/portty
 ```
@@ -60,7 +65,7 @@ brew install mrtechnoo/tap/portty
 [latest release](https://github.com/mrtechnoo/portty/releases/latest), extract it,
 and put `portty` and `portty-host` on your `PATH`:
 ```sh
-tar -xzf portty-v0.1.0-x86_64-unknown-linux-gnu.tar.gz
+tar -xzf portty-v0.1.2-x86_64-unknown-linux-gnu.tar.gz
 sudo install portty portty-host /usr/local/bin/
 ```
 
@@ -73,7 +78,7 @@ it before use:
 shasum -a 256 -c SHA256SUMS      # macOS / Linux
 ```
 ```powershell
-Get-FileHash .\portty-v0.1.0-x86_64-pc-windows-msvc.zip -Algorithm SHA256   # Windows
+Get-FileHash .\portty-v0.1.2-x86_64-pc-windows-msvc.zip -Algorithm SHA256   # Windows
 ```
 
 **Supported platforms:** Windows (x64), macOS (Apple Silicon + Intel),
