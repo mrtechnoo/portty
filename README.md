@@ -115,11 +115,14 @@ pairing your phone reconnects by itself.
 - Terminal traffic is **end-to-end encrypted** between the host and the paired
   device. Pairing keys and paired-device data stay on your machine.
 - No terminal contents pass through any relay.
-- Report security issues to **security@corvuxmindware.com**.
+- Report security issues privately through
+  [GitHub's private vulnerability reporting](https://github.com/corvuxmindware/portty/security/advisories/new)
+  or by email to **support@meetcorvux.com**.
 
 ## Support
 
-- Questions and bug reports: open an issue on this repository.
+- Questions and bug reports: open an issue on this repository, or email
+  **support@meetcorvux.com**.
 - Portty is developed by **Corvux Mindware Private Limited**.
 
 ## License
