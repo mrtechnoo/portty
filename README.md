@@ -39,7 +39,7 @@ scoop bucket add portty https://github.com/mrtechnoo/portty
 scoop install portty
 ```
 
-**WinGet** _(coming soon — submission to the public catalog is in progress)_
+**WinGet**
 ```powershell
 winget install CorvuxMindware.Portty
 ```
