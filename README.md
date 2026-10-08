@@ -5,10 +5,12 @@ actions from your pocket. Portty is a small desktop command-line tool
 (`portty` + `portty-host`) that mirrors a terminal to a paired iPhone or Android
 device over an encrypted, peer-to-peer link.
 
-This repository hosts the **official release binaries** for Portty. The source is
-maintained privately; the downloads here are the ready-to-run builds.
+This repository hosts the **official release binaries** for Portty — the
+ready-to-run builds. Portty is **open source**: the source code is at
+[corvuxmindware/portty](https://github.com/corvuxmindware/portty).
 
-> **Free to install and use.** See [LICENSE.txt](LICENSE.txt).
+> **Free and open source** under the [Apache License 2.0](LICENSE.txt). See
+> [License](#license) for details.
 
 ---
 
@@ -113,3 +115,17 @@ and after the first pairing your phone reconnects by token with no PIN.
 
 - Questions and bug reports: open an issue on this repository.
 - Portty is developed by **Corvux Mindware Private Limited**.
+
+## License
+
+Portty is licensed under the [Apache License 2.0](LICENSE.txt); see also
+[NOTICE](NOTICE). The source code is at
+[corvuxmindware/portty](https://github.com/corvuxmindware/portty). Bundled
+third-party components keep their own licenses, listed in
+`THIRD-PARTY-NOTICES.txt` inside each release archive.
+
+Release archives for v0.1.2 and earlier still contain an older freeware license
+(`LICENSE.txt`, also referred to at the top of `THIRD-PARTY-NOTICES.txt`). That
+license has been replaced: Corvux Mindware licenses those releases under the
+Apache License 2.0 as well. From the next release, the archives include the
+Apache license instead.

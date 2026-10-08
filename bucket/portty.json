@@ -3,7 +3,7 @@
   "description": "Securely share a terminal with a paired phone.",
   "homepage": "https://github.com/mrtechnoo/portty",
   "license": {
-    "identifier": "Freeware",
+    "identifier": "Apache-2.0",
     "url": "https://github.com/mrtechnoo/portty/blob/main/LICENSE.txt"
   },
   "architecture": {
