@@ -67,7 +67,7 @@ brew install mrtechnoo/tap/portty
 [latest release](https://github.com/mrtechnoo/portty/releases/latest), extract it,
 and put `portty` and `portty-host` on your `PATH`:
 ```sh
-tar -xzf portty-v0.1.2-x86_64-unknown-linux-gnu.tar.gz
+tar -xzf portty-v0.1.3-x86_64-unknown-linux-gnu.tar.gz
 sudo install portty portty-host /usr/local/bin/
 ```
 
@@ -80,27 +80,33 @@ it before use:
 shasum -a 256 -c SHA256SUMS      # macOS / Linux
 ```
 ```powershell
-Get-FileHash .\portty-v0.1.2-x86_64-pc-windows-msvc.zip -Algorithm SHA256   # Windows
+Get-FileHash .\portty-v0.1.3-x86_64-pc-windows-msvc.zip -Algorithm SHA256   # Windows
 ```
 
 **Supported platforms:** Windows (x64), macOS (Apple Silicon + Intel),
-Linux (x64).
+Linux (x64, glibc 2.34 or newer — e.g. Ubuntu 22.04+, Debian 12+).
 
 ---
 
 ## First run
 
+Use the latest Portty phone app: v0.1.3 and older app builds cannot connect to
+each other.
+
 ```sh
+portty-host           # start the background host (pairing stays closed)
+portty pair           # add a phone: shows a QR / ticket / six-word phrase, then waits
 portty share          # wrap your shell and mirror it to the paired phone
-portty pair           # reopen the pairing QR / ticket / PIN
 portty agent claude   # chat with a coding agent; approvals sync to your phone
 portty-host status    # is the background host running?
 portty-host stop      # stop the background host
 ```
 
-Pair the phone app by scanning the QR (or entering the ticket + PIN). The host
-daemon never starts on its own — sharing a terminal is always an explicit action,
-and after the first pairing your phone reconnects by token with no PIN.
+To pair, run `portty pair` and scan the QR (or paste the ticket) in the Portty
+app. Both screens then show the same six-digit code: check that they match and
+answer `y` in the `portty pair` terminal. There is no PIN. Pairing never opens
+on its own — adding a phone is always an explicit action — and after the first
+pairing your phone reconnects by itself.
 
 ---
 
@@ -127,5 +133,5 @@ third-party components keep their own licenses, listed in
 Release archives for v0.1.2 and earlier still contain an older freeware license
 (`LICENSE.txt`, also referred to at the top of `THIRD-PARTY-NOTICES.txt`). That
 license has been replaced: Corvux Mindware licenses those releases under the
-Apache License 2.0 as well. From the next release, the archives include the
-Apache license instead.
+Apache License 2.0 as well. From v0.1.3 on, the archives include `LICENSE` and
+`NOTICE` instead.

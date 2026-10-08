@@ -1,5 +1,5 @@
 {
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Securely share a terminal with a paired phone.",
   "homepage": "https://github.com/mrtechnoo/portty",
   "license": {
@@ -8,8 +8,8 @@
   },
   "architecture": {
     "64bit": {
-      "url": "https://github.com/mrtechnoo/portty/releases/download/v0.1.2/portty-v0.1.2-x86_64-pc-windows-msvc.zip",
-      "hash": "f2e1f7703ffe4fb44c41b185ee23f2102b1866a88b728498a83badd9b443ffc1"
+      "url": "https://github.com/mrtechnoo/portty/releases/download/v0.1.3/portty-v0.1.3-x86_64-pc-windows-msvc.zip",
+      "hash": "53299ae3e9d5980e1992fc2dde68fd0e5f5df9e903cd7ffc8658b9d7c72500bc"
     }
   },
   "bin": [
