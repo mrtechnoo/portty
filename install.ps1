@@ -7,7 +7,7 @@
 # your user PATH.
 #
 # Env overrides:
-#   $env:PORTTY_VERSION      e.g. v0.1.0 (default: latest release)
+#   $env:PORTTY_VERSION      e.g. v0.1.3 (default: latest release)
 #   $env:PORTTY_INSTALL_DIR  install location (default: %LOCALAPPDATA%\Portty\bin)
 
 $ErrorActionPreference = "Stop"

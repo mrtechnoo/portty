@@ -7,7 +7,7 @@
 # against the release SHA256SUMS, and installs `portty` + `portty-host`.
 #
 # Env overrides:
-#   PORTTY_VERSION      e.g. v0.1.0 (default: latest release)
+#   PORTTY_VERSION      e.g. v0.1.3 (default: latest release)
 #   PORTTY_INSTALL_DIR  install location (default: /usr/local/bin if writable,
 #                       else ~/.local/bin)
 set -eu
